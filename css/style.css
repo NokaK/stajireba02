@@ -1,0 +1,23 @@
+/*first background*/
+.bg-1{
+	background-image: url('../image/bg-1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 600px;
+}
+/*first background*/
+
+/* section1 */
+.about-me{
+	font-size: 35px;
+	word-wrap: break-word;
+	border: 4px solid black;
+	font-weight: 700;
+	color: #000000;
+	position: absolute;
+}
+
+
+
+/* section1*/
