@@ -2,8 +2,8 @@
 /*=====================================
 first background*/
 
-.bg-1{
-	background-image: url('../image/bg-1.jpg');
+#bg-1{
+	background-image: url('https://www.youtube.com/embed/tgbNymZ7vqY');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
