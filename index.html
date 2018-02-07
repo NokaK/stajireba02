@@ -5,56 +5,184 @@
 	<title> title • title </title>
 	<!-- <link rel="icon" type="images/logo.png" href="img/logo.png"> -->
 	<link rel="stylesheet"  href="css/style.css">
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
+	<link rel="stylesheet" 	href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet"  href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 	<header>
 		<div class="bg-1">
-			<div class="header container d-flex justify-content-between pt-5">
-				<div class="logo">
-					<a class="text-white" href="#">NORMAFILM</a>
-				</div>
-				<div>
-					<nav class="navbar navbar-expand-lg  ">
-					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					    <span class="navbar-toggler-icon"></span>
-					  </button>
-					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-					    <ul class="navbar-nav">
-					      <li class="nav-item px-2">
-					        <a class="nav-link text-white" href="#">ABOUT US</a>
-					      </li>
-					      <li class="nav-item px-2">
-					        <a class="nav-link text-white" href="#">SERVICES</a>
-					      </li>
-					      <li class="nav-item px-2">
-					        <a class="nav-link text-white" href="#">OUR WORKS</a>
-					      </li>
-					      <li class="nav-item pl-2">
-					        <a class="nav-link text-white" href="#">OUR STAFF</a>
-					      </li>
-					    </ul>
-					</nav>
-				</div>
-			</div>
+			<nav class="navbar navbar-expand-lg  fixed-top nav-color">
+				<div class="container pt-3 "> 
+					<div class="logo float-left ">
+				        <a class="navbar-brand text-white" style="letter-spacing:6px;" href="#">NORMAFILM</a>
+				     </div>
+				    	<button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+				    	<span class="navbar-toggler-icon ""><i class="fa fa-bars " aria-hidden="true" ></i></span>
+				    	</button>
+				     <div class="collapse navbar-collapse" style="float: right;" id="navbarSupportedContent">
+				     	 <ul class="navbar-nav">
+					       <li class="nav-item">
+					         <a class="nav-link text-white px-3" href="#">ABOUT US</a>
+					       </li> 
+					       <li class="nav-item">
+					         <a class="nav-link  text-white px-3" href="#">SERVICES</a>
+					      </li>  
+					       <li class="nav-item">
+					         <a class="nav-link text-white px-3" href="#">OUR WORKS</a>
+					       </li>
+					       <li class="nav-item">
+					         <a class="nav-link text-white pl-3" href="#">OUR STAFF</a>
+					       </li>
+					     </ul>
+					 </div>
+					 
+					
+					<!-- <div class="logo float-left">
+				        <a class="navbar-brand text-white" style="letter-spacing:6px;" href="#">NORMAFILM</a>
+				     </div> 
+				    	<button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+				    	<span class="navbar-toggler-icon ""><i class="fa fa-bars " aria-hidden="true" ></i></span>
+				    	</button>
+					 <div class=" collapse navbar-collapse float-right" id="navbarSupportedContent">
+					     <ul class="navbar-nav">
+					       <li class="nav-item">
+					         <a class="nav-link text-white px-3" href="#">ABOUT US</a>
+					       </li> 
+					       <li class="nav-item">
+					         <a class="nav-link  text-white px-3" href="#">SERVICES</a>
+					      </li>  
+					       <li class="nav-item">
+					         <a class="nav-link text-white px-3" href="#">OUR WORKS</a>
+					       </li>
+					       <li class="nav-item">
+					         <a class="nav-link text-white pl-3" href="#">OUR STAFF</a>
+					       </li>
+					     </ul>
+					 </div> -->
+				 </div>     
+			 </nav>
 		</div>
 	</header>
-	<section>
-		<div class="container">
-			<div class="d-flex justify-content-end">
-				<div class="about-me text-center  px-4">
-					<p class="pt-5" style="padding-bottom:0px;">ABOUT</p>
+	<section id="about-us">
+		<div class="container pb-5">
+			<div class="d-flex justify-content-end ">
+				<div class="about-container text-center position-absolute px-4 pt-4">
+					<p class="pt-5">ABOUT</p>
 					<p class="text-right">US</p>
 				</div>
 			</div>
-			
+			<div id="carouselExampleIndicators" class="carousel slide padding-top" data-ride="carousel">
+			  <ol class="carousel-indicators" style="clear: both;">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active indicator" ></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1" class=" indicator"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2" class=" indicator"></li>
+			 </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      	<div class="row">
+						<div class="col-6">
+							<img class="poto1" src="image/section1-poto.png" alt="poto">
+						</div>
+						<div class="col-6 d-flex align-items-center">
+							<p class="text1">5orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure </p>
+						</div>
+					</div>
+    			</div>
+    			<div class="carousel-item">
+      				<div class="row">
+						<div class="col-6">
+							<img class="poto1" src="image/section1-poto.png" alt="poto">
+						</div>
+						<div class="col-6 d-flex align-items-center">
+							<p class="text1">5orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure </p>
+						</div>
+					</div>
+    			</div>
+    			<div class="carousel-item">
+     				 <div class="row">
+						<div class="col-6">
+							<img class="poto1" src="image/section1-poto.png" alt="poto">
+						</div>
+						<div class="col-6 d-flex align-items-center">
+							<p class="text1">5orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure </p>
+						</div>
+					</div>
+    			</div>
+ 			 </div>
+			</div>
 		</div>
 	</section>
-
-
-
-
+	<section id="our-works">
+		<div class="bg-2">
+			<div class="container text-white">
+				<div class="d-flex justify-content-start ">
+					<div class="about-container text-right text-white px-4 pt-4 " style="border:3px solid#ffffff;">
+						<p class="pt-5">OUR</p>
+						<p class="text-right">WORKS</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img  class="our-works-poto" src="image/section2-1.jpg">
+						<p>LOREM IPSUM AFANWRJ AWREI ABE</p>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img  class="our-works-poto" src="image/section2-2.jpg">
+						<p>LOREM IPSUM</p>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img  class="our-works-poto" src="image/section2-3.jpg">
+						<p>LOREM IPSUM</p>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img  class="our-works-poto" src="image/section2-4.jpg">
+						<p>LOREM IPSUM</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img  class="our-works-poto" src="image/section2-5.jpg">
+						<p>LOREM IPSUM AFANWRJ </p>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img  class="our-works-poto" src="image/section2-6.jpg">
+						<p>LOREM IPSUM </p>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img  class="our-works-poto" src="image/section2-7.jpg">
+						<p>LOREM IPSUM AFANWRJ AWREI ABE</p>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img  class="our-works-poto" src="image/section2-8.jpg">
+						<p>LOREM IPSUM </p>
+					</div>
+				</div>
+				<div class=" d-flex justify-content-center py-5">
+					<a class="see-more text-white text-center" href="#">SEE MORE</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="we-offer">
+		<div class="container">
+			<div class="d-flex justify-content-end ">
+				<div class="about-container text-right  px-4 pt-4">
+					<p class="pt-5">WE</p>
+					<p class="text-right">OFFER</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">f</div>
+				<div class="col-lg-4">f</div>
+				<div class="col-lg-4">f</div>
+			</div>
+		</div>
+	</section>
+	
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
