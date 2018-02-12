@@ -1,4 +1,7 @@
-/*first background*/
+
+/*=====================================
+first background*/
+
 .bg-1{
 	background-image: url('../image/bg-1.jpg');
 	background-repeat: no-repeat;
@@ -6,21 +9,27 @@
 	background-size: cover;
 	height: 650px;
 }
-/*first background*/
+/*first background
+==================================
+navigation*/
+.nav{
+    border-bottom: 1px solid black;
+}
 
-/* section1  our  */
+/*navigation
+=================================
+ section1  about us */
 .about-container{
 	font-size: 27px;
-	border: 3px solid black;
-	font-weight: 700;
 	color: #000000;
-	
 	line-height: 0.6;
-	z-index:2;
 }
-.padding-top{
-	padding-top:10%;
+hr {
+    border: 0;
+    height: 1px;
+    background:rgb(187, 179, 179);
 }
+
 .poto1{
 	width: 100%;
 	max-width: 500px;
@@ -47,29 +56,55 @@
   background-color: rgb(255, 255, 255, 0.5);
 }
 
-/* section1 about us*/
-
-/*section 2 our works*/
-.bg-2{
-	background-color: #B3B3B3;
-}
+/* section1 about us
+===================================
+section 2 our works*/
 .our-works-poto{
 	max-width: 550px;
 	width: 100%;
 }
 .see-more{
-	border:2px solid#ffffff;
+	border:2px solid black;
 	padding: 10px 50px;
+	background-color: inherit;
+	cursor: pointer;
 }
 
-/*section 2 our works*/
+/*section 2 our works
+==================================
+section 3 our staff*/
+.staff img{
+    max-width: 200px;
+    width: 100%;
+}
+
+/*section 3 our staff
+====================================
+section 4 our  services*/
+.service-poto img{
+    width: 120px;
+}
+
+/*section 4 our services
+=====================================
+footer*/
+.hr-1{
+    border: 0;
+    height: 1.5px;
+    background:#555b61;
+}
+.text-form{
+    height:120px;
+}
+/*footer
+=====================================
+media screen*/
 @media  (max-width: 990px){
-	.padding-top{
-	padding-top:12%;
-	}
 	.text1{
 	padding-left: 15px;
 	 line-height:1.2;
 	 text-align: justify;
 	}
 }
+
+/*media screen*/
