@@ -64,8 +64,8 @@ section 2 our works*/
 	width: 100%;
 }
 .see-more{
-	border:2px solid black;
-	padding: 10px 50px;
+	border:1px solid black;
+	padding: 5px 20px ;
 	background-color: inherit;
 	cursor: pointer;
 }
