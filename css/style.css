@@ -3,12 +3,17 @@
 first background*/
 
 #bg-1{
-	background-image: url('https://www.youtube.com/embed/tgbNymZ7vqY');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	height: 650px;
+	position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+   object-fit: cover;
 }
+
 /*first background
 ==================================
 navigation*/
@@ -20,9 +25,11 @@ navigation*/
 =================================
  section1  about us */
 .about-container{
-	font-size: 27px;
+	font-size: 14px;
 	color: #000000;
-	line-height: 0.6;
+text-align: justify;
+
+
 }
 hr {
     border: 0;
@@ -34,12 +41,7 @@ hr {
 	width: 100%;
 	max-width: 500px;
 }
-.text1{
-	padding-left: 60px;
-	line-height:1.2;
-	text-align: justify;
-	box-sizing: border-box;
-}
+
 .indicator {
  cursor: pointer;
   position: relative;
@@ -76,6 +78,10 @@ section 3 our staff*/
 .staff img{
     max-width: 200px;
     width: 100%;
+    cursor: pointer;
+}
+.staff img:hover{
+	background-color: red;
 }
 
 /*section 3 our staff
