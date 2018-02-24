@@ -82,9 +82,13 @@ section 3 our staff*/
     width: 100%;
     cursor: pointer;
 }
-.staff img:hover{
-	background-color: red;
+.more-info{
+	opacity: 0;
 }
+
+.staff:hover .more-info {
+	opacity: 1;
+	}
 
 /*section 3 our staff
 ====================================
@@ -92,6 +96,7 @@ section 4 our  services*/
 .service-poto img{
     width: 120px;
 }
+
 
 /*section 4 our services
 =====================================
