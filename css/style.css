@@ -118,9 +118,8 @@ footer*/
 .social-icons2:hover{
 	color: #dd2a78;
 }
-textarea{
+.text-form{
 	height: 150px;
-	width: 100%;
 }
 
 /*footer
