@@ -109,18 +109,20 @@ footer*/
     height: 1.5px;
     background:#555b61;
 }
-.social-icons:nth-child(1):hover{
+.social-icons:hover{
 	color: #08a0e9;
 }
-.social-icons:nth-child(2):hover{
+.social-icons1:hover{
 	color: #3b5998;
 }
-.social-icons:nth-child(3):hover{
+.social-icons2:hover{
 	color: #dd2a78;
 }
-.text-form{
-    height:120px;
+textarea{
+	height: 150px;
+	width: 100%;
 }
+
 /*footer
 =====================================
 media screen*/
