@@ -1,16 +1,4 @@
-
-// $(document).ready(function(){
-//   $(window).scroll(function(){
-//   	var scroll = $(window).scrollTop();
-// 	  if (scroll > 300) {
-// 	    $(".scroll-class").css("background" , "inherit");
-// 	  }
-
-// 	  else{
-// 		  $(".scroll-class").css("background" , "#ffffff");  	
-// 	  }
-//   })
-// })
+ // scroll
 
 $("#about-usLink").click(function() {
     $('html, body').animate({
@@ -32,18 +20,64 @@ $("#servicesLink").click(function() {
         scrollTop: $("#services").offset().top
     }, 500);
 });
+$("#button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#demo").offset().top
+    }, 100);
+});
+
+// close/open icons
+// $(document).ready(function(){
+//     $("#close-icon").click(function(){
+//         $("#navbarSupportedContent").hide();
+//     });
+//     $("#burger-icon").click(function(){
+//         $("navbarSupportedContent").show();
+//     });
+// });
 
 
+// see more
 function toggleText()
 {
    
-        document.getElementById("demo").classList.remove("collapse")
+document.getElementById("demo").classList.remove("collapse")
 }
-$('.open-popup-link').magnificPopup({
-  type: 'inline',
-  midClick: true,
-  mainClass: 'mfp-fade'
+
+// video Magnific Popup
+
+$('.video').magnificPopup({
+  type: 'iframe',
+  
+  
+  iframe: {
+    patterns: {
+      dailymotion: {
+       
+        index: 'dailymotion.com',
+        
+        id: function(url) {        
+            var m = url.match(/^.+dailymotion.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/);
+            if (m !== null) {
+                if(m[4] !== undefined) {
+                  
+                    return m[4];
+                }
+                return m[2];
+            }
+            return null;
+        },
+        
+        src: 'https://www.dailymotion.com/embed/video/%id%'
+        
+      }
+    }
+  }
+  
+  
 });
+
+// slick slider
 
 $(document).on('ready', function() {
       $(".vertical-center-4").slick({
