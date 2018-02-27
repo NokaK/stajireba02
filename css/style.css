@@ -27,7 +27,7 @@ navigation*/
 =================================
  section1  about us */
 .about-container{
-	font-size: 14px;
+	font-size: 20px;
 	color: #000000;
 	text-align: justify;
 }
@@ -76,7 +76,11 @@ section 2 our works*/
 	background-color: inherit;
 	cursor: pointer;
 }
+ button.see-more: hover{
 
+  background-color: #ffffff;
+  color:#000000;
+}
 /*section 2 our works
 ==================================
 section 3 our staff*/
