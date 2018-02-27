@@ -2,15 +2,18 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<title> N O R M A F I L M </title>
-	<link rel="stylesheet"  href="css/style.css">
-	<link rel="stylesheet"  href="css/bootstrap.min.css">
-	<link rel="stylesheet" 	href="css/bootstrap-reboot.min.css">
-	<link rel="stylesheet"  href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> N O R M A F I L M </title>
+<link rel="stylesheet"  href="css/style.css">
+<link rel="stylesheet"  href="css/bootstrap.min.css">
+<link rel="stylesheet" 	href="css/bootstrap-reboot.min.css">
+<link rel="stylesheet"  href="css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="slick-1.8.0//slick/slick.css">
+<link rel="stylesheet" type="text/css" href="slick-1.8.0/slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="scroll-effects/assets/animate.css" />
 
 </head>
 <body>
@@ -28,16 +31,16 @@
 				     <div class="collapse navbar-collapse justify-content-end"  id="navbarSupportedContent">
 				     	 <ul class="navbar-nav pull-right">
 					       <li class="nav-item">
-					         <a class="nav-link text-dark px-3" href="#about-us">About us</a>
+					         <a class="nav-link text-dark px-3" id="about-usLink">About us</a>
 					       </li> 
 					       <li class="nav-item">
-					         <a class="nav-link text-dark px-3" href="#our-works">Our works</a>
+					         <a class="nav-link text-dark px-3" id="our-worksLink">Our works</a>
 					      </li>  
 					       <li class="nav-item">
-					         <a class="nav-link text-dark px-3" href="#our-staff">Our staff</a>
+					         <a class="nav-link text-dark px-3" id="our-staffLink">Our staff</a>
 					       </li>
 					       <li class="nav-item">
-					         <a class="nav-link  text-dark pl-3" href="#Services">Services</a>
+					         <a class="nav-link  text-dark pl-3" id="servicesLink">Services</a>
 					       </li>
 					     </ul>
 					 </div>
@@ -59,13 +62,13 @@
 							<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 							  <div class="carousel-inner">
 							    <div class="carousel-item active">
-							      <img class="d-block w-100" src="image/section1-poto.png" alt="First slide">
+							      <div id="about-bg1"></div>
 							    </div>
 							    <div class="carousel-item">
-							      <img class="d-block w-100" src="image/section1-poto.png" alt="Second slide">
+							       <div id="about-bg2"></div>
 							    </div>
 							    <div class="carousel-item">
-							      <img class="d-block w-100" src="image/section1-poto.png" alt="Third slide">
+							       <div id="about-bg3"></div>
 							    </div>
 							  </div>
 							  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -78,9 +81,9 @@
 							  </a>
 							</div>
 						</div>
-						<div class="col-md-6  col-sm-12 p-2">
-							<p> textextext LOREM IPSUM AFANWRJ AWREI about-container LOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM</p>
-							<p> IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOR AFANWRJ AWREI ABE</p>
+						<div class="col-md-6  col-sm-12 pl-2">
+							<p class="text-justify"> textextext LOREM IPSUM AFANWRJ AWREI about-container LOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM</p>
+							<p  class="text-justify"> IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOREM IPSUM AFANWRJ AWREI ABELOR AFANWRJ AWREI ABE</p>
 						</div>
 					</div>
 				</div>
@@ -97,20 +100,13 @@
 			<div class="container ">
 				<div class="row pt-5">
 					<div class="col-lg-3 col-md-6 col-sm-12">
-						<video  id="my-video" class="video-js small-video" controls preload="auto" 
- 								poster="image/poster.jpg" data-setup="{}">
-						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
-						    <source src="MY_VIDEO.webm" type='video/webm'>
-						    <p class="vjs-no-js">
-						      To view this video please enable JavaScript, and consider upgrading to a web browser that
-						      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-						    </p>
-					    </video>
+							<a class="video" href="http://www.dailymotion.com/video/xxgmlg#.UV71MasY3wE"><img src="image/section2-1.jpg" style="width: 100%;max-width: 500px;"></a>
+
 						<p>LOREM IPSUM AFANWRJ AWREI ABE</p>
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12 ">
 						<video  id="my-video" class="video-js small-video" controls preload="auto" 
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -122,7 +118,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12  ">
 						<video id="my-video " class="video-js small-video" controls preload="auto"  
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -134,7 +130,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12 ">
 						<video id="my-video" class="video-js small-video" controls preload="auto"
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -148,7 +144,7 @@
 				<div class="row pt-2">
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<video id="my-video" class="video-js small-video" controls preload="auto" 
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -160,7 +156,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12 ">
 						<video id="my-video" class="video-js small-video" controls preload="auto"  
- 								poster="image/poster.jpg" data-setup="{}">
+ 								data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -172,7 +168,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12 ">
 						<video id="my-video" class="video-js small-video" controls preload="auto" 
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -184,7 +180,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6 col-sm-12">
 						<video id="my-video" class="video-js small-video" controls preload="auto"  
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -199,7 +195,7 @@
 					<div class="row pt-2">
 						<div class="col-lg-3 col-md-6 col-sm-12">
 						<video id="my-video" class="video-js small-video" controls preload="auto" 
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -211,7 +207,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-12">
 						<video id="my-video" class="video-js small-video" controls preload="auto" 
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -223,7 +219,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-12">
 						<video id="my-video" class="video-js small-video" controls preload="auto" 
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -235,7 +231,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-12">
 						<video id="my-video" class="video-js small-video" controls preload="auto" 
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -249,7 +245,7 @@
 					<div class="row pt-2">
 						<div class="col-lg-3 col-md-6 col-sm-12">
 						<video id="my-video" class="video-js small-video" controls preload="auto"
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -261,7 +257,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-12">
 						<video id="my-video" class="video-js small-video" controls preload="auto" 
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -273,7 +269,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-12">
 						<video id="my-video" class="video-js small-video" controls preload="auto" 
- 								poster="image/poster.jpg" data-setup="{}"> 
+ 								 data-setup="{}"> 
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -285,7 +281,7 @@
 						</div>
 						<div class="col-lg-3 col-md-6 col-sm-12">
 						<video id="my-video" class="video-js small-video" controls preload="auto" 
- 								poster="image/poster.jpg" data-setup="{}">
+ 								 data-setup="{}">
 						  	 <source src="videos/bgvideo.mp4" type='video/mp4'>
 						    <source src="MY_VIDEO.webm" type='video/webm'>
 						    <p class="vjs-no-js">
@@ -311,11 +307,30 @@
 			<p>OUR STAFF</p>
 		</div>
 		<hr>
-		<div class="container">
-	
-		</div>
+		    <div class="container">
+			   <div class="regular slider">
+				    <div>
+				      <img src="http://placehold.it/350x300?text=1">
+				    </div>
+				    <div>
+				      <img src="http://placehold.it/350x300?text=2">
+				    </div>
+				    <div>
+				      <img src="http://placehold.it/350x300?text=3">
+				    </div>
+				    <div>
+				      <img src="http://placehold.it/350x300?text=4">
+				    </div>
+				    <div>
+				      <img src="http://placehold.it/350x300?text=5">
+				    </div>
+				    <div>
+				      <img src="http://placehold.it/350x300?text=6">
+				    </div>
+ 				</div>
+   			 </div>  
 	</section>
-	<section id="Services">
+	<section id="services">
 		<div class="container about-container pt-5 pb-1">
 			<p>Services</p>
 		</div>
@@ -345,7 +360,7 @@
 						<div class="service-poto">
 							<img src="image/service3.png">
 						</div>
-						<div class="">Management</div>
+						<div>Management</div>
 					</div>
 					<p class="text-justify">5orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna Lorem ipsum dolor sit amet,</p>
 				</div>
@@ -396,13 +411,19 @@
 		</div>
 	</footer>
 <!-- ================= our staff =================== -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
-<script type="text/javascript" src="js/myjs.js"></script>
+
+
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script src="slick-1.8.0./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="js/myjs.js"></script>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+  <script src="scroll-effects/assets/viewportchecker.js"></script>
+
 </body>
 </html>
