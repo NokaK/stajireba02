@@ -8,37 +8,38 @@ navigation*/
 .nav{
     border-bottom: 2px solid black;
     cursor: pointer;
+    background-color:rgba(255, 255, 255, 0.95);
 }
+.logo a{
+    letter-spacing:8px;
+    font-size: 28px;
+    }
 ol, ul {
     list-style: none;
 }
 li {
     display: inline-block;
-    padding: 20px 0 20px;
     vertical-align: middle;
 }
-a:hover, a:focus, a:active {
+li a:hover, a:focus, a:active {
     color: #999;
     text-decoration: none;
 }
-a {
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+ li a {
     text-decoration: none;
     transition: color 0.1s, background-color 0.1s;
 }
-a {
+ li a {
     position: relative;
     display: block;
-    padding: 16px 0;
     margin: 0 12px;
     letter-spacing: 1px;
     font-size: 16px;
-    line-height: 16px;
     font-weight: 500;
     transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
     color: #000;
 }
-a::before {
+ li a::before {
     content: '';
     display: block;
     position: absolute;
@@ -51,10 +52,10 @@ a::before {
     transform: scale(0, 1);
     transition: color 0.1s,transform 0.2s ease-out;
 }
-a:active::before {
+ li a:active::before {
     background-color: #000;
 }
-a:hover::before, a:focus::before {
+ li a:hover::before, a:focus::before {
     transform-origin: left top;
     transform: scale(1, 1);
 }
@@ -105,13 +106,19 @@ hr {
 ===================================
 section 2 our works*/
 .our-works-poto{
-	max-width: 550px;
+	max-width: 500px;
 	width: 100%;
+  height: 70%;
 }
-.small-video {
-	max-width: 340px;
-	width: 100%;
-	height: 200px;
+.play-button {
+  font-size: 80px;
+  color: #ffffff;
+  left: 50%;
+  transform: translate(-50%, 50%);;
+}
+.play-button:hover {
+  color:  grey;
+
 }
 .see-more{
 	border:1px solid #80878c;;
@@ -217,6 +224,9 @@ footer*/
     height: 1.5px;
     background:#555b61;
 }
+.footer-text {
+  font-size: 20px;
+}
 .social-icons:hover{
 	color: #08a0e9;
 }
@@ -233,12 +243,21 @@ footer*/
 /*footer
 =====================================
 media screen*/
+@media (max-width: 1124px){
+   li a:before{
+    display: none;
+   }
+ 
+}
 @media  (max-width: 990px){
 	.text1{
 	padding-left: 15px;
 	 line-height:1.2;
 	 text-align: justify;
 	}
+  .play-button {
+  transform: translate(-50%, 70%);
+  }
 }
 @media  (max-width: 770px){
 .small-video {
@@ -246,6 +265,10 @@ media screen*/
 	height: 350;
 
 }
+  .play-button {
+
+  transform: translate(-50%, 100%);
+  }
 }
 
 /*media screen*/
