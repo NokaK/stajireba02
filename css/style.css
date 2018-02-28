@@ -140,7 +140,17 @@ section 2 our works*/
   max-width: 500px;
 }
 
+/*      }
+      .slider {
+          margin: 60px auto;
+          width: 500px;
+      }
 
+ added the following to give the background color of the arrows as red for visibility, the default which can be found in the slick-theme.css was white 
+
+.slick-prev:before, .slick-next:before{
+    color:white;
+}*/
 
 /*section 3 our staff
 ====================================
