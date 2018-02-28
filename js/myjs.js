@@ -28,10 +28,7 @@
 // console.log("ready in");
 
 // see more
-// function toggleText()
-// {
-//    document.getElementById("demo").classList.remove("collapse")
-// }
+
 
 // video Magnific Popup
 
@@ -127,7 +124,17 @@ $('.video').magnificPopup({
   
 });
 
+$(".see-more").click(function(){
+  console.log("clicked");
+  $("#demo").toggleClass("collapse");
+  // document.getElementById("demo").classList.remove("collapse");
+})
+function toggleText()
 
+{
+  $("#demo").removeClass('.collapse');
+   // document.getElementById("demo").classList.remove("collapse");
+}
 
     $('.regular').slick({
   infinite: true,
