@@ -88,10 +88,13 @@
 }
 .slick-prev:before
 {
+     font-size: 25px;
+    color: grey;
     content: '←';
 }
 [dir='rtl'] .slick-prev:before
-{
+
+{  
     content: '→';
 }
 
@@ -106,6 +109,9 @@
 }
 .slick-next:before
 {
+         font-size: 25px;
+    color: grey;
+
     content: '→';
 }
 [dir='rtl'] .slick-next:before
@@ -201,4 +207,12 @@
 {
     opacity: .75;
     color: black;
+}
+@media (max-width:770px) {
+ .slick-next:before{
+    display: none;
+ }
+ .slick-prev:before {
+    display: none;
+ }
 }
