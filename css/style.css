@@ -5,6 +5,44 @@ body{
 
 ==================================
 navigation*/
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    max-width: 500;
+    width: 100%; 
+    height: 600px
+  }
+.vid{
+  width: 100%;
+  height: 650px;
+  padding-top: 5%;
+}
+#alternative{
+  height: 650px;
+  width: 100%;
+  max-width: 1380px;
+  padding-top: 5%;
+}
+#yt {
+    display: none;
+}
+#content {
+}
+
+.first-btn {
+    font-weight: 800;
+    font-size: 150px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);;
+    color: white;
+}
+.first-btn:hover{
+  color:grey;
+}
+
 .nav{
     border-bottom: 2px solid black;
     cursor: pointer;
@@ -188,9 +226,15 @@ media screen*/
    li a:before{
     display: none;
    }
- 
+  .vid{
+    padding-top: 6%;
+  }
+  #alternative{
+     padding-top: 6%;
+  
+  }
 }
-@media  (max-width: 990px){s
+@media  (max-width: 990px){
 	.text1{
 	padding-left: 15px;
 	 line-height:1.2;
@@ -202,6 +246,13 @@ media screen*/
     .staff-text{
     opacity: 1;
   }
+      .vid{
+    padding-top: 7%;
+  }
+  #alternative{
+     padding-top:7%;
+  
+}
 }
 @media  (max-width: 770px){
 .small-video {
@@ -216,6 +267,21 @@ media screen*/
   .staff-text{
     opacity: 1;
   }
+    .vid{
+    padding-top: 9%;
+  }
+  #alternative{
+     padding-top:9%;
+  
+}
+}
+@media  (max-width: 600px){
+      .vid{
+    padding-top: 11%;
+  }
+  #alternative{
+     padding-top:11%;
+  
 }
 
 /*media screen*/
