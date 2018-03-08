@@ -4,8 +4,26 @@ body{
 /*
 ==================================
 navigation*/
+
+
+.main-video{
+
+  width: 100%;
+
+}
+.play-button1{
+    font-size: 250px;
+     color: #ffffff;
+     top: 50%;
+    left: 50%;
+  transform: translate(-50%, 0%);
+}
+.play-button1:hover {
+  color:  grey;
+
+}
 .padding{
-  padding-top: 5%;
+  padding-top: 4.5%;
 }
 .nav{
     border-bottom: 2px solid black;
@@ -61,6 +79,7 @@ li a:hover, a:focus, a:active {
     transform-origin: left top;
     transform: scale(1, 1);
 }
+
 /*navigation
 =================================
  section1  about us */
@@ -79,7 +98,7 @@ hr {
 }
 
 #about-bg1{
-  background-image: url('../image/section1-poto.png');
+  background-image: url('../image/section1-poto1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -88,6 +107,7 @@ hr {
 }
 #about-bg2{
   
+  background-image: url('../image/section1-poto2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -136,21 +156,31 @@ section 2 our works*/
 /* section 2 our work
  ==================================
  section 3 our staff*/
+.staff-item{
+   overflow: hidden;
 
+}
 .staff-item img{
   width: 100%;
   max-width: 500px;
+  transition: transform .3s;
+  cursor: pointer;
+   overflow: hidden;
 
 }
+.staff-item img:hover{
+  transform: scale(1.2,1.2);
+}
 .staff-text{
+  margin-top: 30px;
       opacity: 0.3;
       cursor: pointer;
       font-size: 18px;
 }
-.staff-text:hover{
+/*.staff-item .staff-text:hover{
       opacity: 1;
       transition-duration: 0.8s;
-}
+}*/
 /*section 3 our staff
 ====================================
 section 4 our  services*/
@@ -180,7 +210,8 @@ footer*/
   color: #dd2a78;
 }
 .text-form{
-  height: 150px;
+
+   resize: none;
 }
 
 /*footer
@@ -193,14 +224,22 @@ media screen*/
    .padding{
    padding-top: 6.5%;
   }
- 
+ .play-button1{
+   font-size: 200px;
+  transform: translate(-50%, -50%);
+ }
 }
+
 @media  (max-width: 990px){
   .text1{
   padding-left: 15px;
    line-height:1.2;
    text-align: justify;
   }
+   .play-button1{
+   font-size: 170px;
+  transform: translate(-50%, -100%);
+ }
   .play-button {
   transform: translate(-50%, 70%);
   }
@@ -219,6 +258,10 @@ media screen*/
     .padding{
    padding-top: 9%;
   }
+     .play-button1{
+   font-size: 140px;
+  transform: translate(-50%, -150%);
+ }
 .small-video {
   max-width: 640px;
   height: 350;
@@ -236,11 +279,22 @@ media screen*/
     .padding{
    padding-top: 16%;
   }
+       .play-button1{
+   font-size: 100px;
+  transform: translate(-50%, -250%);
+ }
 }
 @media  (max-width: 375px){
     .padding{
-   padding-top: 18%;
+   padding-top: 16%;
   }
+       .play-button1{
+   font-size: 70px;
+  transform: translate(-50%, -300%);
+ }
+ .logo{
+  display: none;
+ }
 }
 
 /*media screen*/
