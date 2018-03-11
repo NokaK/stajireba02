@@ -6,24 +6,29 @@ body{
 navigation*/
 
 
-.main-video{
-
+#main-video{
+  background-image: url('../image/main-video-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 720px;
   width: 100%;
+
 
 }
 .play-button1{
-    font-size: 250px;
+    font-size: 240px;
      color: #ffffff;
      top: 50%;
     left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -20%);
 }
 .play-button1:hover {
   color:  grey;
 
 }
 .padding{
-  padding-top: 4.5%;
+  padding-top: 4.3%;
 }
 .nav{
     border-bottom: 2px solid black;
@@ -168,19 +173,22 @@ section 2 our works*/
    overflow: hidden;
 
 }
-.staff-item img:hover{
-  transform: scale(1.2,1.2);
+ .main-staff:hover img {
+   transform: scale(1.2,1.2);
+
 }
+.main-staff:hover .staff-text{
+  opacity: 1;
+  transition-duration: 0.8s;
+}
+
 .staff-text{
   margin-top: 30px;
       opacity: 0.3;
       cursor: pointer;
       font-size: 18px;
 }
-/*.staff-item .staff-text:hover{
-      opacity: 1;
-      transition-duration: 0.8s;
-}*/
+
 /*section 3 our staff
 ====================================
 section 4 our  services*/
@@ -226,11 +234,14 @@ media screen*/
   }
  .play-button1{
    font-size: 200px;
-  transform: translate(-50%, -50%);
  }
 }
 
 @media  (max-width: 990px){
+
+#main-video{
+  height: 420px;
+}
   .text1{
   padding-left: 15px;
    line-height:1.2;
@@ -238,7 +249,6 @@ media screen*/
   }
    .play-button1{
    font-size: 170px;
-  transform: translate(-50%, -100%);
  }
   .play-button {
   transform: translate(-50%, 70%);
@@ -260,7 +270,6 @@ media screen*/
   }
      .play-button1{
    font-size: 140px;
-  transform: translate(-50%, -150%);
  }
 .small-video {
   max-width: 640px;
@@ -273,6 +282,7 @@ media screen*/
   }
   .staff-text{
     opacity: 1;
+    font-size: 24px;
   }
 }
 @media  (max-width: 414px){
@@ -281,7 +291,6 @@ media screen*/
   }
        .play-button1{
    font-size: 100px;
-  transform: translate(-50%, -250%);
  }
 }
 @media  (max-width: 375px){
@@ -290,7 +299,6 @@ media screen*/
   }
        .play-button1{
    font-size: 70px;
-  transform: translate(-50%, -300%);
  }
  .logo{
   display: none;
